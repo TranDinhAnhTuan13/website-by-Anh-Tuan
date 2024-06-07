@@ -79,76 +79,34 @@ h1, h2 {
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 20px rgba(255, 0, 217, 0.253);
 }
-/* Facebook */
+
+/* Thay đổi hình trên các nút xã hội */
 .facebook {
-    background-image: url(images/437175728_956187552666232_4780451985108732532_n.jpg);
-    background-size: 100%;
-    background-position: center;
-    width: 100px;
-    height: 30px;
-    transition: transform 0.3s ease;
+    background-image: url(images/facebook_icon.jpg);
 }
 
-.facebook:hover {
-    transform: scale(1.1);
-        box-shadow: 0px 0px 20px rgb(0, 162, 255); /* Thay đổi màu sắc của bóng khi hover */
-}
-
-/* Instagram */
 .instagram {
-    background-image: url(images/435335077_442753764945936_4012643933435134470_n.jpg);
-    width: 100px;
-    height: 30px;
-    background-size: 100%;
-    background-position: center;
-    transition: transform 0.3s ease;
+    background-image: url(images/instagram_icon.jpg);
 }
 
-.instagram:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgb(0, 162, 255); /* Thay đổi màu sắc của bóng khi hover */
-}
-
-/* Tiktok */
 .tiktok {
-    background-image: url(images/437316584_733780405594024_8297218657883755928_n.jpg);
+    background-image: url(images/tiktok_icon.jpg);
+}
+
+/* Thay đổi kích thước và hover cho các nút xã hội */
+.social-links a.facebook,
+.social-links a.instagram,
+.social-links a.tiktok {
     width: 100px;
     height: 30px;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tiktok:hover {
+.social-links a.facebook:hover,
+.social-links a.instagram:hover,
+.social-links a.tiktok:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgb(0, 162, 255); /* Thay đổi màu sắc của bóng khi hover */
-}
-
-@media only screen and (max-width: 600px) {
-    .container {
-        max-width: 90%; /* Giảm kích thước container */
-        margin: 20px auto; /* Canh giữa container */
-        padding: 10px; /* Giảm padding */
-    }
-
-    h1, h2 {
-        font-size: 24px; /* Giảm kích thước font cho tiêu đề */
-    }
-
-    .social-links {
-        margin-top: 20px; /* Tăng khoảng cách giữa social links và tiêu đề */
-    }
-
-    .social-links li {
-        margin: 5px; /* Giảm khoảng cách giữa các biểu tượng mạng xã hội */
-    }
-
-    .social-links a {
-        padding: 8px 15px; /* Giảm padding cho biểu tượng mạng xã hội */
-    }
-
-    .content {
-        width: 90%; /* Giảm kích thước content */
-        height: 150px; /* Giảm chiều cao content */
-    }
+    box-shadow: 0px 0px 20px rgba(0, 162, 255, 0.5);
 }
