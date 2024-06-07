@@ -123,6 +123,7 @@ h1, h2 {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px rgb(0, 162, 255); /* Thay đổi màu sắc của bóng khi hover */
 }
+
 @media only screen and (max-width: 600px) {
     .container {
         max-width: 90%; /* Giảm kích thước container */
