@@ -82,15 +82,15 @@ h1, h2 {
 
 /* Thay đổi hình trên các nút xã hội */
 .facebook {
-    background-image: url(images/facebook_icon.jpg);
+    background-image: url(https://img.icons8.com/?size=100&id=118467&format=png&color=000000);
 }
 
 .instagram {
-    background-image: url(images/instagram_icon.jpg);
+    background-image: url(https://img.icons8.com/?size=100&id=32320&format=png&color=000000);
 }
 
 .tiktok {
-    background-image: url(images/tiktok_icon.jpg);
+    background-image: url(https://img.icons8.com/?size=100&id=juS4pYkbvSCh&format=png&color=000000);
 }
 
 /* Thay đổi kích thước và hover cho các nút xã hội */
