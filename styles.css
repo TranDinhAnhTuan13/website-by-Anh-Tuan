@@ -68,10 +68,10 @@ h1, h2 {
     height: 200px;
     margin: auto;
     border-radius: 10px;
-    background-image: url(images/—Pngtree—cool\ black\ background_442156.jpg);
+    background-image: url(images/—Pngtree—cool_black_background_442156.jpg); /* Đảm bảo đường dẫn hình ảnh đúng */
     transition: all 1.0s;
     backdrop-filter: blur(10px);
-    background-size: 100%;
+    background-size: cover; /* Đảm bảo hình nền được bao phủ */
     background-position: center;
 }
 
@@ -81,15 +81,15 @@ h1, h2 {
 }
 
 /* Thay đổi hình trên các nút xã hội */
-.facebook {
+.social-links a.facebook {
     background-image: url(https://img.icons8.com/?size=100&id=118467&format=png&color=000000);
 }
 
-.instagram {
+.social-links a.instagram {
     background-image: url(https://img.icons8.com/?size=100&id=32320&format=png&color=000000);
 }
 
-.tiktok {
+.social-links a.tiktok {
     background-image: url(https://img.icons8.com/?size=100&id=juS4pYkbvSCh&format=png&color=000000);
 }
 
@@ -97,12 +97,12 @@ h1, h2 {
 .social-links a.facebook,
 .social-links a.instagram,
 .social-links a.tiktok {
-    width: 10px;
-    height: 3px;
-    background-size: 20px;
-    background-position: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease
-    background-repeat: no-repeat;
+    width: 50px; /* Đặt kích thước nút cho dễ nhìn */
+    height: 50px; /* Đặt kích thước nút cho dễ nhìn */
+    background-size: contain; /* Đảm bảo hình nền không bị cắt */
+    background-position: center;
+    background-repeat: no-repeat; /* Ngăn hình nền lặp lại */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm dấu chấm phẩy bị thiếu */
 }
 
 .social-links a.facebook:hover,
