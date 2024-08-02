@@ -98,7 +98,7 @@ h1, h2 {
 .social-links a.instagram,
 .social-links a.tiktok {
     width: 50px; /* Đặt kích thước nút cho dễ nhìn */
-    height: 50px; /* Đặt kích thước nút cho dễ nhìn */
+    height: 30px; /* Đặt kích thước nút cho dễ nhìn */
     background-size: contain; /* Đảm bảo hình nền không bị cắt */
     background-position: center;
     background-repeat: no-repeat; /* Ngăn hình nền lặp lại */
