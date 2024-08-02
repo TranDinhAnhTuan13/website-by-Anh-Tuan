@@ -99,7 +99,7 @@ h1, h2 {
 .social-links a.tiktok {
     width: 10px;
     height: 3px;
-    background-size: auto;
+    background-size: 20;
     background-position: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
