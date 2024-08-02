@@ -1,3 +1,8 @@
+Dưới đây là mã HTML của bạn đã được chỉnh sửa để bao gồm các phần CSS cần thiết cho các nút xã hội và một số cải tiến khác. Tôi đã thêm các quy tắc CSS cho các nút xã hội và đảm bảo rằng chúng hiển thị đúng với hình nền và nội dung của bạn.
+
+### Mã HTML hoàn chỉnh:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,16 +15,73 @@
             background-image: url('https://img.freepik.com/free-vector/night-rice-field-terraces-asian-mountains-landscape-with-paddy-plantation-cascades-chinese-agricultural-farm-dark-starry-sky-with-full-moon-glowing-fireflies-cartoon-vector-illustration_107791-10584.jpg?t=st=1717769779~exp=1717773379~hmac=646326e16973e58b53370da82794e6e179630dc9f13ff24dceff9e4b9262a706&w=1060');
             background-size: cover;
             background-position: center;
+            font-family: Roboto slab, sans-serif; /* Thêm font chữ */
+            color: #fff; /* Màu chữ trắng để nổi bật trên nền tối */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 10% auto;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Nền mờ để dễ đọc chữ */
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .social-links {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .social-links li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 50px; /* Kích thước nút */
+            height: 50px; /* Kích thước nút */
+            background-size: contain; /* Đảm bảo hình nền không bị cắt */
+            background-position: center;
+            background-repeat: no-repeat; /* Ngăn hình nền lặp lại */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
+        }
+
+        .social-links a.facebook {
+            background-image: url(https://img.icons8.com/?size=100&id=118467&format=png&color=ffffff);
+        }
+
+        .social-links a.instagram {
+            background-image: url(https://img.icons8.com/?size=100&id=32320&format=png&color=ffffff);
+        }
+
+        .social-links a.tiktok {
+            background-image: url(https://img.icons8.com/?size=100&id=juS4pYkbvSCh&format=png&color=ffffff);
+        }
+
+        .social-links a:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(0, 162, 255, 0.5);
+        }
+
+        hr {
+            border: 1px solid #fff; /* Đường kẻ màu trắng */
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="content"></div>
         <h1>Chào mừng bạn đến với trang web giới thiệu bản thân của tôi!</h1>
-        <h1>Tại đây, bạn sẽ tìm thấy những thông tin thú vị về tôi. Tôi hy vọng rằng qua trang web này. Hãy cùng khám phá và kết nối với tôi nhé!!</h1>
+        <h1>Tại đây, bạn sẽ tìm thấy những thông tin thú vị về tôi. Tôi hy vọng rằng qua trang web này. Hãy cùng khám phá và kết nối với tôi nhé!</h1>
         <hr>
-        <h2>My social network</h2>
+        <h2>Mạng xã hội của tôi</h2>
         <ul class="social-links">
             <li><a href="https://www.facebook.com/trdinhanhtuan" class="facebook" target="_blank"></a></li>
             <li><a href="https://www.instagram.com/_trdiatuan.zyk_//" class="instagram" target="_blank"></a></li>
@@ -28,4 +90,4 @@
         <div class="box"></div>
     </div>
 </body>
-</html>
+</
