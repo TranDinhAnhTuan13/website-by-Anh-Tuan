@@ -1,120 +1,104 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+* {  
+    margin: 0;  
+    padding: 0;  
+}  
 
-a {
-    text-decoration: none;
-}
+a {  
+    text-decoration: none;  
+}  
 
-.clearfix:after {
-    content: "";
-    display: block;
-    height: 0;
-    visibility: hidden;
-    clear: both;
-}
+.clearfix:after {  
+    content: "";  
+    display: block;  
+    height: 0;  
+    visibility: hidden;  
+    clear: both;  
+}  
 
-body {
-    font-family: Roboto Slab, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ff0000;
-    transition: all 0.2s;
-    background-size: cover;
-}
+body {  
+    font-family: 'Roboto Slab', sans-serif;  
+    background-color: #ff0000;  
+    transition: all 0.2s;  
+    background-size: cover;  
+}  
 
-.container {
-    max-width: 900px;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 3%;
-    background-color: rgba(255, 255, 255, 0.3);
-}
+.container {  
+    max-width: 900px;  
+    margin: 10% auto;  
+    padding: 20px;  
+    border-radius: 3%;  
+    background-color: rgba(255, 255, 255, 0.3);  
+}  
 
-h1 {
-    text-align: center;
-    font-size: 24px; /* Thay đổi kích thước chữ cho tiêu đề */
-}
-h2 {
-    text-align: center;
-    font-size: 18px; /* Thay đổi kích thước chữ cho tiêu đề */
-}
-h3 {
-    text-align: center;
-    font-size: 24px; /* Thay đổi kích thước chữ cho tiêu đề */
-}
-.social-links {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-}
+h1 {  
+    text-align: center;  
+    font-size: 24px;  
+}  
 
-.social-links li {
-    display: inline-block;
-    margin: 10px;
-}
+h2 {  
+    text-align: center;  
+    font-size: 18px;  
+}  
 
-.social-links a {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-}
+h3 {  
+    text-align: center;  
+    font-size: 24px;  
+}  
 
-.social-links a:hover {
-    background-color: #555;
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgba(0, 162, 255, 0.5);
-}
+.social-links {  
+    list-style-type: none;  
+    padding: 0;  
+    text-align: center;  
+}  
 
-.content {
-    top: 10%;
-    width: 600px;
-    height: 200px;
-    margin: auto;
-    border-radius: 10px;
-    background-image: url(images/—Pngtree—cool_black_background_442156.jpg); /* Đảm bảo đường dẫn hình ảnh đúng */
-    transition: all 1.0s;
-    backdrop-filter: blur(10px);
-    background-size: cover; /* Đảm bảo hình nền được bao phủ */
-    background-position: center;
-}
+.social-links li {  
+    display: inline-block;  
+    margin: 10px;  
+}  
 
-.content:hover {
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 0px 20px rgba(255, 0, 217, 0.253);
-}
+.social-links a {  
+    display: inline-block;  
+    width: 50px; /* Kích thước nút rõ ràng */  
+    height: 50px; /* Kích thước nút rõ ràng */  
+    background-size: contain;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;  
+}  
 
-/* Thay đổi hình trên các nút xã hội */
-.social-links a.facebook {
-    background-image: url(https://img.icons8.com/?size=100&id=118467&format=png&color=000000);
-}
+.social-links a:hover {  
+    transform: scale(1.1);  
+}  
 
-.social-links a.instagram {
-    background-image: url(https://img.icons8.com/?size=100&id=32320&format=png&color=000000);
-}
+.social-links a.facebook {  
+    background-image: url(https://img.icons8.com/?size=100&id=118467&format=png&color=000000);  
+}  
 
-.social-links a.tiktok {
-    background-image: url(https://img.icons8.com/?size=100&id=juS4pYkbvSCh&format=png&color=000000);
-}
+.social-links a.instagram {  
+    background-image: url(https://img.icons8.com/?size=100&id=32320&format=png&color=000000);  
+}  
 
-/* Thay đổi kích thước và hover cho các nút xã hội */
-.social-links a.facebook,
-.social-links a.instagram,
-.social-links a.tiktok {
-    width: 50px; /* Đặt kích thước nút cho dễ nhìn */
-    height: 10px; /* Đặt kích thước nút cho dễ nhìn */
-    background-size: contain; /* Đảm bảo hình nền không bị cắt */
-    background-position: center;
-    background-repeat: no-repeat; /* Ngăn hình nền lặp lại */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm dấu chấm phẩy bị thiếu */
-}
+.social-links a.tiktok {  
+    background-image: url(https://img.icons8.com/?size=100&id=juS4pYkbvSCh&format=png&color=000000);  
+}  
 
-.social-links a.facebook:hover,
-.social-links a.instagram:hover,
-.social-links a.tiktok:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgba(0, 162, 255, 0.5);
+.social-links a:hover {  
+    box-shadow: 0px 0px 20px rgba(0, 162, 255, 0.5);  
+}  
+
+.content {  
+    width: 600px;  
+    height: 200px;  
+    margin: auto;  
+    border-radius: 10px;  
+    background-image: url(images/—Pngtree—cool_black_background_442156.jpg); /* Đảm bảo đường dẫn hình ảnh đúng */  
+    transition: all 1.0s;  
+    backdrop-filter: blur(10px);  
+    background-size: cover;  
+    background-position: center;  
+}  
+
+.content:hover {  
+    backdrop-filter: blur(10px);  
+    box-shadow: 0px 0px 20px rgba(255, 0, 217, 0.253);  
 }
